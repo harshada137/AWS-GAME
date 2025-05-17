@@ -1,0 +1,48 @@
+ ## Game Hosting Models:-
+One of the big decisions in developing your game is how you will host it. Depending on your game needs and your hosting model, players might connect locally, remotely, or combine both. In this lesson, you will 
+review the most common types of game hosting models and the considerations, benefits, and limitations for each. 
+
+1] Local hosting :-
+Although local hosting can be used for multiplayer games, it is more often used for single-player games. Even local hosting sometimes requires an internet connection for cloud backups, saves, and dial-home
+communications. For example, an internet connection might be needed to save player progression, deliver updates to the game, or verify digital rights management (DRM). 
+
+  * Considerations:-
+    Your game engine or local game server is more accessible to players, possibly increasing the risk of cheating or exploits.
+
+  * Benefits:-
+    Local hosting benefits include cost reduction, good player experience, and offline-play support, which is useful for airplanes or for Wi-Fi or internet dead zones.
+
+  * Limitations:-
+    In some cases, the local device might not be powerful enough to run the game server and the game. This might be true particularly in multiplayer local hosting situations.
+
+2] Peer-to-peer hosting :-
+Although several variations exist, the peer-to-peer (P2P) hosting model is typically used for multiplayer games where one player's computer is the host. This model can also use dial-home communications for the 
+same reasons as local hosting or to prevent cheating.
+
+  * Considerations:-
+    Whoever the host is will have an advantage because they have zero latency compared to other players. There are versions of P2P hosting where no computer is primary.
+
+  * Benefits:-
+    P2P hosting provides a similar cost benefit to local hosting. You can migrate a session to another player if one goes offline. Players playing together locally all get relatively low latency.
+
+  * Limitations:-
+    Sometimes, the player hosting the game has a slow computer or connection, making it difficult to control the player experience for positive outcomes. It can also require more development code effort
+    for the net code.
+
+2] Player hosting or dedicated hosting
+Players or communities can host dedicated game servers on hardware they own or lease. Additionally, the game creator can lease dedicated servers in multiple locations. This provides an opportunity for mod 
+creation and community interaction. Before cloud hosting was common, the community and players helped the game creator achieve scale. It provides a positive experience for more players because the server is
+dedicated, and game services such as voice, chat, and forums are run on other hardware. The game company might lease servers in different locations, and the game's popularity can fluctuate with the availability 
+of servers
+
+  * Considerations: 
+   This might be an option for game developers who don't want to run too much stuff in the cloud. Also, mod-based games do well with this model because the mods might dramatically change server requirements that 
+   the modder can adapt to without affecting the game creator.
+
+ * Benefits: 
+   Benefits for player hosting include cost savings and a big benefit for the community. Games for which players can host their own servers often develop tightly knit and passionate communities that
+   can help carry the game along for years. 
+
+* Limitations:
+  There is a risk that if you release your server binaries, they will get out and become modifiable, and you have to be comfortable with that. Also, if your player base is not savvy and connects to a malicious
+  server, or some viruses occur in game mods, damage might be caused.
