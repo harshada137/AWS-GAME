@@ -1,0 +1,56 @@
+Service levels for AWS for Games solutions
+As a game developer, many factors influence how you host your game in the cloud. Your game's requirements, your team's skill level, your business priorities, and where you are in cloud adoption all affect your
+decisions. AWS for Games offers a wide variety of solutions with different service levels for game development to fit the needs of a wide range of game developers. These range from indie developers to AAA game 
+organizations.
+
+As a game developer, you need control over your resources and the ability to determine where to focus your effort. The different service levels offer choices on the amount of customization compared with the 
+automation they provide.
+
+* Service managed by AWS
+  Developers that want to spend more time developing the game and less time on the supporting infrastructure might choose more automation. Speed to market might also be a high priority for game developers using
+  managed services. Although the initial setup and management of infrastructure are time consuming, they might also not want to perform backups and patch updates on an ongoing basis.
+* Service unmanaged by AWS
+  Other developers might prefer a hands-on approach with the infrastructure. They want the fine control that customization provides and don't mind spending their time on that aspect. Although unmanaged services 
+  are entirely under your control and you perform all the necessary configuration and management tasks, they also require a greater degree of technical skill and knowledge.
+
+# Managed services
+  Managed services are where AWS operates specific tasks on your behalf. Some examples of tasks are day-to-day infrastructure management and ongoing cost optimization. Other automated tasks include common
+  activities such as patch management, monitoring, and backup services.
+  Although the tasks are automated, they are still secure. This is because AWS is responsible for protecting the global infrastructure that runs all the services offered in the AWS Cloud through the AWS shared
+  responsibility model. The AWS global infrastructure is designed and managed according to security best practices and various security compliance standards.
+* Manage services API
+  A managed service relies on an API to integrate other development and management tools. With an API, communication occurs and the request is completed automatically. This does not require an extra step from you 
+  to make the request because it occurs automatically through the API call.
+
+* Benefits of managed services
+  Managed services work backward from the operational outcomes as desired by the development team. These outcomes might include migration to the cloud and any related operations as a benefit.
+  Automating the day-to-day infrastructure tasks, which means fewer operational resources required and reduced operational overhead and risk 
+  Getting the game to market faster with automation because migration to the cloud can be completed quickly
+  Removing barriers to innovation because tasks are automated and become more agile
+  Implementing and extending security and compliance requirements to a game with step-by-step procedures provided by managed services
+
+
+# Unmanaged services
+  Imagine that you are a game developer that needs more control over your resources. Additionally, there is a technical aptitude requirement for resource management. There is also the desire for additional cost
+  savings. You and your team can install your own security patches and complete the required backups. The team accepts the required downtime associated with any unplanned outages. AWS for Games unmanaged solutions
+  support this scenario. Unmanaged solutions give a development team increased control to develop based on their needs. They enjoy the associated management costs savings and have the opportunity to use their
+  technical skills. 
+* Operations responsibilities
+  The game developer completes all the operational tasks themselves with unmanaged services or do-it-yourself (DIY). The development team completes common activities, such as change requests, monitoring, backups,
+  and patch management. To do this, they use the AWS Management Console or other tools and associated business processes to ensure consistent operations.
+
+* Benefits of unmanaged solutions
+  With unmanaged solutions, you can customize services without the extra costs associated with the support of managed services. Building games with unmanaged solutions can also provide competitive
+  differentiation. 
+  Unmanaged solutions possess a default configuration that can be used for game development or customized as desired. Typically, game developers have the technical acumen to customize their service configurations
+  successfully. This is especially beneficial to a game development team that is technically solid and wants the ability to customize their resources but does not need the additional technical support and related
+  costs.
+
+* Example of ranges
+  Let's look at some AWS for Games solutions for game servers to see the range of managed and unmanaged options. These services, which will be covered in more detail in the following lessons, 
+  include the following:
+  - Amazon Elastic Compute Cloud (Amazon EC2)
+  - Amazon Elastic Container Service (Amazon ECS)
+  - Amazon Elastic Kubernetes Service (Amazon EKS)
+  - AWS Fargate
+  - Amazon GameLift
