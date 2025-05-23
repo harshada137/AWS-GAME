@@ -1,0 +1,34 @@
+Core game functions in the cloud
+Before you can decide which AWS services are best for hosting your game in the cloud, it is helpful to review an example of how a game works in the cloud. In the following video, a high-level overview of how games 
+work in the cloud, you will walk through the four core game functions. These are game servers, game backends, game analytics, and monitoring.
+
+Let's talk about what the architecture for a game might look like.
+
+The elements that make up a game's architecture will reflect the functionalities or features that the game needs to provide. For example, if your game has real-time multiplayer, your architecture will need a 
+multiplayer server component.
+The architecture we have here includes some common core game functions that many online games use today.
+That being said, this is by no means an exhaustive list and the architecture of your game should work backwards from the features that you want to deliver to your players.
+So let's start with the player, or more specifically, their game client. This is the software that runs on a console, PC, mobile device, or browser. It receives input from the player, displays the game, and 
+usually contains some amount of the game logic as well.
+However, many games nowadays rely on backend services to handle the game logic. This has a lot of benefits, such as providing a more customized experience, being able to iterate and add new features more quickly,
+and making cheating more difficult.
+In this architecture, our backend runs on Amazon Web Services, or AWS, and consists of multiple services that handle different game functions. Commonly, the game client communicates with these backend services
+using protocols such as Hypertext Transfer Protocol or HTTP, Secure HTTP, or HTTPS, and web sockets.
+One of the most common services that game developers need to create is an authentication service. This service authenticates a player when they play the game, either by logging them into the developer's own 
+authentication system, or using a third-party identity provider. Examples of such providers include publishers or game platforms, such as Steam, Microsoft Xbox Live, or the Google Play Store. Once authenticated, 
+that player's identity is tied to that session, and future communication from their game client will know whose game state and data to update.
+Services that use this identity information might include achievements, in-game economy, leaderboards, and of course, the player profile.
+
+Another common backend service that is so ubiquitous that it is often treated in a category all of its own are game servers. Game servers often have unique challenges such as high compute and low latency 
+requirements that separate them from other backend services. Players will usually go through a matchmaking service to be placed onto a game server, and then communicate directly with that server. They'll use a
+mix of UDP- and TCP-based protocols.
+Finally, in recent years, developers have wanted to collect more and more data around how their games are running, and how their players are playing their games.
+Using real-time analytics, developers can better understand the current health of their game, and use those data points to decide whether they need to scale to respond to an influx of players, or fix bugs by 
+deploying a quick patch.
+In contrast, batch analytics are used to dive deep and help game designers make decisions that affect the game's design. Examples include balance fixes, or seeing what features and modes are the most popular,
+which ultimately affect the roadmap for future development.
+So how do the analytics components get the data they need in the first place? They ingest events that are emitted from all other parts of the game architecture, from the game client, the backend services, and the
+game servers. These events can be metrics, logs, or custom data structures that are consumed by the analytics services and transformed into usable information.
+
+This has been a very high-level overview of the core functions of a game. In the following lessons, we'll dive into each of these functions in more detail to learn how they're built. We'll also explore some of 
+the important design considerations you'll want to keep in mind.
