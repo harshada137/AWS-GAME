@@ -41,6 +41,13 @@ developers to the AWS Cloud.
 - Delivering a great player experience for games requiring low-latency, low-jitter gameplay can be a challenge.
 - These are some of the most common game server challenges solved with the AWS for Games solutions.
 
+# Different game server approaches
+
+AWS for Games offers different approaches to deploy your game server in the AWS Cloud to meet different game requirements and game developer preferences. They are virtual servers, containers, serverless, and fully managed servers. One difference in the approaches is the amount of customization in the compute, available options, and pricing models.  
+
 # Design considerations for your game server
 Although there are too many considerations to list them all, there are several key design considerations to keep in mind as you get started. These questions will help you gather the information to determine the 
 best fit for your specific game server solutions in the AWS Cloud.
+
+# Different service levels of game servers
+We'll explore the five common AWS game server solutions together with each of the different approaches in the following lessons. The solutions have different service levels to meet the needs of game developers. The solutions range from the most customization to the most automation possible. No matter which level you select, all AWS game server solutions provide world-class network performance. And they are scalable and elastic for high-performance computing for games. The global offerings of all these game server solutions will give you secure resizable capacity to run and operate your game with minimal latency. 
