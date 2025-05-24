@@ -1,0 +1,46 @@
+The way a server works in the cloud
+As you get started, it is helpful to clarify two terms that are often confused, game session and game server. These terms will be essential in the following few lessons as you identify game server solutions in the
+AWS Cloud. 
+The game server provides the authoritative game state and coordinates activities involving multiple players. It is sometimes also called a multiplayer game server. It should not be confused with the game backend,
+which provides services such as player authentication, player profile, and achievements. Those will be covered later in the course.
+
+Let’s talk about game servers!
+At a high level, dedicated game servers act as authoritative hosts for players to interact within a game. This might be in a persistent world, such as in a massively multiplayer online, or MMO, game. Or,
+it might be in a competitive environment, such as a capture the flag match between two teams.
+The server is the central truth for events that occur within these environments, which players connect to. This means that if there is a discrepancy in the simulation because of latency, the game server’s version
+of events is what the conflict will resolve to.
+Most modern games require a dedicated server, but an alternative peer-to-peer, or P2P, option also exists if latency isn’t a concern.
+So what’s the difference between P2P and running a dedicated server?
+In short, P2P hosting does not have a central authoritative server that all clients connect to. Instead, it has the clients connect o each other and resolve conflicts by having one client act as the host server 
+for the session. For less latency sensitive games, such as 1-on-1 card games, this can actually be a great option because it helps to keep complexity and costs down. Conflicts can be easily resolved, and one
+player having a host advantage with lower latency does not jeopardize competitive integrity.
+However, for most games, such as the capture the flag scenario mentioned earlier, one player that has lower latency because of being the host is a tremendous advantage. It can therefore lead to poor experiences 
+for all other connected players in this setup. That’s where dedicated servers come into play!
+Now, how do we approach creating a dedicated server hosting environment? Typically, you can think of games that require dedicated servers as being one of two types: Session-based or persistent worlds.
+Session-based games can be thought of as quick, start and finish environments. The game server only exists to run the match between players, and then is either shut down or restarted as soon as the match ends.
+The capture the flag scenario that we mentioned is an example of this. These environments typically are shorter lasting and require quick spin-up and spin-down times as matches are completed, and players move to
+the next session.
+By contrast, persistent worlds, such as MMOs or virtual hangout environments, are typically longer lasting. Players drop in and out while the server continuously runs and is interacted with and changed by other
+players. These games prioritize stability and reliability of the server environment over spin-up times because servers are typically only shut down during maintenance windows or updates.
+So finally, after you have determined the type of game server approach needed, what services should you consider?
+There’s much to consider. To begin with, persistent worlds tend to operate more effectively on services such as On-Demand Amazon Elastic Compute Cloud, or Amazon EC2. Using On Demand avoids Spot Instance
+interruptions and also means that you can withstand larger connection counts per individual server.
+By contrast, other services can quickly spin up and spin down environments and use Spot Instances. Examples include Amazon GameLift or containerization with Amazon Elastic Container Service, or Amazon ECS, and 
+Amazon Elastic Kubernetes Service, or Amazon EKS. These are great fits for session-based games!
+This has been a brief overview of the different types of game server approaches and services to consider for your game.
+
+
+# Common game server challenges
+Running your games at scale while providing your players with an uninterrupted, low-latency, and consistent experience can be challenging. There are several other common game server challenges that drive game 
+developers to the AWS Cloud.
+
+- Scaling up during peak hours and then ramping down as players leave is one challenge that can be costly and difficult. 
+- Handling large traffic spikes, such as game launches and in-game events and having enough worldwide regions to reach your player base can be challenging with some cloud providers or on-premises leasing.
+- Having the flexibility to change compute and infrastructure to support new game features without being locked into existing hardware is essential to evolve your game.
+- Securing your game data and infrastructure from external threats such as DDoS attacks is critical.
+- Delivering a great player experience for games requiring low-latency, low-jitter gameplay can be a challenge.
+- These are some of the most common game server challenges solved with the AWS for Games solutions.
+
+# Design considerations for your game server
+Although there are too many considerations to list them all, there are several key design considerations to keep in mind as you get started. These questions will help you gather the information to determine the 
+best fit for your specific game server solutions in the AWS Cloud.
