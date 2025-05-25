@@ -1,0 +1,36 @@
+In this lesson, you will cover the most customizable solution, virtual servers on raw Amazon Elastic Compute Cloud (Amazon EC2), and how game builders commonly use it as a virtual game server. You will define what it is, identify when to use it, and review the benefits and costs.
+
+Amazon EC2 is a secure and scalable service that provides compute capacity in the AWS Cloud. It is the compute power used to run many game functions from the lobby to the backend. As the game server solutions move toward more automation, they offer fewer customization options in exchange for automation. Let's start with the most customizable option, using the raw compute of Amazon EC2 as a virtual server. 
+
+# Virtual game servers using Amazon EC2
+When you use Amazon EC2 as a virtual game server, you have fine-grain control in a resizable cloud-based web service. With hundreds of choices of types with varying combinations of CPU, memory, storage, networking capacity, and sizes, you can select the relevant options to match your game's requirements. This gives you all the cloud-based compute options to build virtual game servers yourself as a game developer.
+The benefits of using Amazon EC2 as a virtual game server are complete control and all the customization options available. The cost of using such a hands-on infrastructure solution with so many customization options is the time and skill required. So, you might be asking when you should use it.
+
+*When to use it
+There are many use cases for using virtual game servers on Amazon EC2. The following are some examples. 
+- Some game developers use virtual game servers on Amazon EC2 when they prefer more hands-on infrastructure. They want full control over their environment, the packages they are running, and the exact versions they are on.
+- Other game developers use virtual servers with Amazon EC2 because they need persistence in their environment. With some massively multiplayer online (MMO) or persistent worlds, game servers might run for months or years. In those cases, it makes sense to use virtual servers on Amazon EC2. It is also ideal for developing persistent world games because of the ability of the developer to put tasks on a server.
+- Some experienced game developers who do all the hands-on infrastructure support on their on-premises game servers might be looking for a quick way to get their game in the cloud to launch in some new markets. Using Amazon EC2 can provide a quick way to lift and shift the game to the AWS Cloud.
+- In a few situations, game developers might have very specific considerations such as virtual reality (VR) games. Or developers might run certain software that automated solutions might not support. In those cases, they decide to use virtual game servers on Amazon EC2 as a fallback option.
+- And finally, others might need more options for customizable compute, such as graphic-intensive instance types to meet specific game server requirements.
+# EC2 instance types for game servers
+EC2 instances come in many different instance families that can be selected to support the specific development needs for your game. The family defines the performance and respective costs of that instance type. 
+- Compute optimized :- is used for game servers that require high-performance computing. This provides the best CPU per price-performance point. An example is CPU-intensive tasks, such as game simulation. 
+- General purpose :- is used for game servers that require a balance of compute, memory, and networking resources. 
+- Memory optimized :-  is used for game servers that are more memory-intensive than compute-intensive.
+- Accelerated computing :- is used for game servers that require accelerated graphic processing units (GPUs), to provide the highest possible performance for graphic-intensive games.
+
+# Pricing models for AWS
+In addition to the different instance families, AWS offers pricing models that can be used to meet your budget and game session requirements. Two common ones used for game servers are On-Demand Instances and Spot Instances.  
+- On-Demand Instances :-  are ideal for persistent world games or games with longer sessions that can't be interrupted. As a game developer, you pay for compute capacity by the hour or the second, depending on which instances you run. No longer-term commitments or upfront payments are needed. You can increase or decrease your compute capacity depending on the demands of your game and only pay the specified per hourly rates for the instance you use. 
+- Spot Instances :- offer unused EC2 instances for much less than the On-Demand instance price. They are often used for session-based games that can quickly spin up or spin down and provide significant cost savings for the game developer. They are also used for shorter session games such as anything less than a few hours. They can also be used for games that are only feasible at very low compute prices, such as free-to-play games.
+- Savings Plans :-  offer a flexible pricing model that offers low prices in exchange for a commitment to a consistent amount of usage for a 1-year term or 3-year term. Some game developers with a baseline of usage use this type of pricing to save money.
+- Reserved Instances :-  offer a significant discount (up to 72 percent) compared to On-Demand Instances. They can be purchased for a 1-year term or 3-year term. Reserved Instances have several different payment options, such as all upfront, low upfront, or no upfront. This pricing model is also used by developers with a baseline of usage in their games.
+
+# Amazon EC2 Auto Scaling
+Amazon EC2 Auto Scaling is a more managed service that monitors applications and automatically adjusts capacity to meet demand. For game builders, this means they can secure predictable and steady performance. 
+It essentially means that you can adjust the amount of infrastructure you have running at any time, based on your instance use. It will automatically detect how much load you have and scale accordingly. 
+How does it do that? Amazon EC2 Auto Scaling provides the ability to automatically add or remove EC2 instances using scheduled, dynamic, and predictive scaling. With scheduled scaling, there is the ability to determine when instances will be modified based on workload changes. With dynamic scaling, instances can be provisioned in advance based on a demand curve. In contrast, predictive scaling is based on a machine learning (ML) model that predicts traffic changes and the respective instance needs based on predicted demand. 
+Game builders can also have challenges associated with the health of their instances and servers. Amazon EC2 Auto Scaling monitors the health and availability of the instances and supports games that experience demand spikes. 
+
+Additional benefits of Amazon EC2 Auto Scaling are improved fault tolerance and increased application availability while lowering costs. Because of all the features mentioned, Amazon EC2 Auto Scaling is ideal for persistent world games.
