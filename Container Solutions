@@ -1,0 +1,24 @@
+In this lesson, you will learn about the container-based solutions for AWS for Games game servers, Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS). You will identify the benefits of containers and the key differences between the two solutions.
+# Container services as a game server solution
+If you and your team have experience and prefer container solutions, containers are great for games where it is helpful for tasks to be placed on the server and torn down as needed. Developers can also use Amazon EC2 to run containers with server-level control.
+By using containers for game servers, you have a consistent and lightweight way to run your game servers across different environments. Some game organizations move to containers as a way to modernize their applications and work more efficiently. Although many organizations use container solutions, there is a learning curve and skill set needed to work with them. For this reason, game builders new to working with containers will require extra time and training to use this type of approach.
+If you are new to container solutions, it is helpful to know that container management can be categorized into three areas. The first area, a registry, is a secure place to store and manage the container images. The second area is orchestration, which manages when and where the containers will run. The last area is compute, which powers the containers.
+
+# Amazon ECS
+Amazon ECS is a fully managed service that offers a highly scalable and fast container orchestration service with Docker and Windows containers support. As a game builder, you can use Amazon ECS to deploy multiplayer game servers using Docker or Windows containers.
+Amazon ECS can include multiple scheduling strategies for container deployment for different game functions. Because Amazon ECS is integrated with Elastic Load Balancing, you can also distribute player traffic across containers.
+One of the benefits of Amazon ECS is integration with the AWS environment, and many game developers find it is easier to use when new to container development.
+Although it will work for most games, Amazon ECS even supports long game sessions such as persistent world games. It is used to build microservices, which make a game more manageable after it is built. 
+
+# Containers with Amazon EKS
+Amazon EKS is a fully managed and certified conformant Kubernetes orchestration service that is highly available, scalable, and secure. Kubernetes is open-source software that you can use for the deployment and management of containerized applications.
+Game development is supported with Amazon EKS. It is production ready, with International Organization for Standardization (ISO) and Payment Card Industry (PCI) compliance, and available in five global Regions. It will work for most games and will even integrate for compute-intensive workloads, such as persistent world games.
+One of the benefits of using Kubernetes is that if you are already using Kubernetes somewhere else, you can spin up Amazon EKS and continue to do the same thing in the AWS Cloud.
+
+# Amazon ECS and Amazon EKS differences
+As the names for these two Amazon services are similar, they can often be confused. One difference is that Amazon EKS can be run on-premises or in a co-location data center, whereas Amazon ECS can only run in the AWS Cloud. The other significant difference is that Amazon EKS provides more control or customization, whereas Amazon ECS provides more automation.  
+Next, you will identify an AWS service to remove the infrastructure management tasks from container solutions.
+
+# Fargate serverless solution for containers 
+AWS Fargate is a serverless compute engine that works with both Amazon ECS and Amazon EKS, which means that you can focus on your game without managing the underlying infrastructure. 
+As a game builder, having to provision and maintain server instances can be cumbersome. When Amazon ECS or Amazon EKS is paired with Fargate, it provides a serverless compute option for containers. Existing code is brought to the container, which means no changes to the code are required. 
