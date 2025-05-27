@@ -1,0 +1,23 @@
+In this lesson, you will learn about the fully managed game server solution, Amazon GameLift, to host your game in the cloud. You will walk through an end-to-end sample architecture using GameLift, review GameLift features, and identify the problems its designed to solve. 
+In the previous lessons, you reviewed the range of game server solutions, from the most customizable Amazon EC2 servers to managed container-based solutions. Now let's examine GameLift, the most automated solution.
+
+# Fully managed servers using Amazon GameLift
+With GameLift, you can deploy, operate, and scale game servers for your session-based, multiplayer games. GameLift provides a seamless gameplay experience with high-availability, high-reliability, low-latency, and low-cost game servers while dynamically scaling your resource usage to meet worldwide player demand.
+
+As a game builder, you upload a build of your game and specify to GameLift which type of EC2 instances to host it on. You can use Amazon EC2 compute in worldwide AWS Regions, and over 40 instance types are available. GameLift sets up sessions and maintains a suitably sized fleet of instances, and it automatically scales for you.
+Because GameLift is the most automated game server solution, game builders can spend less time on infrastructure. It helps reduce the time it takes to deploy a game server and get it to market.
+In the following video, you will walk through a sample game server architecture for GameLift from end to end.
+To watch the Sample Game Server Architecture video, choose the play button.
+
+* A bit more about GameLift
+GameLift offers the most automation in the range of AWS for Games services. It is also completely flexible and caters to your needs as a game builder. You can use it as a complete game server solution or use only specific modular features. So, for example, if you are building a game from scratch, you can use all of GameLift. If you want to run containerized game servers, you could use GameLift FleetIQ to provide low-cost viable Spot Instances. 
+GameLift supporting cross-play between different devices.
+
+* Cross-platform compatibility
+Connect your game community and broaden your player pool of potential matches with GameLift support for various game platforms. It provides cross-platform compatibility for your game if you need to launch on PCs, consoles, mobile devices, or even hybrid platforms.
+
+* Migrate from P2P servers
+Peer-to-peer (P2P) servers are often used as low-latency, cost-effective solutions for games. GameLift can provide a low-cost, low-latency dedicated game server without the worry of host interruptions or depending on your players having good internet connections for their P2P hosts.
+
+* GameLift FleetIQ
+With the GameLift FleetIQ feature, you can onboard server workloads to the cloud using your existing tools or software, independent of adopting any other managed GameLift features. This can provide up to 70 percent cost savings compared to existing on-premises deployments. GameLift FleetIQ accomplishes this with the use of EC2 Spot Instances.
